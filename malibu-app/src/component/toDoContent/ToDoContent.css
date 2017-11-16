@@ -1,0 +1,140 @@
+.outer_wrapper {
+
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 300px;
+    height: 500px;
+    background-color: #61666d;
+    color: white;
+    /* display: inline-block; */
+    float: left;
+}
+.todo_outer_wrapper{
+    display: flex;
+}
+.heading {
+	text-align: center;
+	padding-top: 15px;
+	margin: 0;
+	padding-left: 10px;
+	color: white;
+	display: inline-block;
+	font-weight: bold;
+}
+.heading_div {
+    background-color: #404444;
+    width: 300px;
+    height: 45px;
+
+}
+.to_do_delete {
+    float: right;
+    margin: 14px;
+    color: #ccc;
+    border-color: #1eeded;
+    background: #525949;
+    color: #1eeded;
+    cursor: pointer;
+}
+.to_do_delete:hover {
+    background-color: #1eeded;
+}
+.button_style {
+	float: right;
+    font-weight: bold;
+    margin: 10px;
+    color: #ccc;
+    border-color: #1eeded;
+    border: 1px solid;
+    background: #525949;
+    border-radius: 15px;
+    color: #1eeded;
+    cursor: pointer;
+}
+.new_div {
+	position: relative;
+    top: 20px;
+    height: calc(100% - 68px);
+    overflow: auto;
+    width: 100%;
+}
+.remove_Button {
+	background-color: #50e3a4;
+    font-weight: bolder;
+}
+.list_style {
+	margin: 0;
+	padding: 0;
+}
+.li_style {
+	margin: 0;
+	list-style-type: none;
+}
+
+.label_style {
+	position: relative;
+}
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  display: block;
+}
+
+.round label:after {
+	border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 4px;
+    left: 3px;
+    position: absolute;
+    top: 4px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 8px;
+}
+
+.round input[type="checkbox"] {
+  display: none;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+td {
+	vertical-align: middle;
+	padding: 5px;
+}
+.content_inside {
+	padding: 5px;
+	width: 220px;
+	overflow: hidden;
+	word-break: break-all;
+
+}
+.hidden_wrapper {
+    margin-bottom: 20px;
+    
+}
+.hidden_text_box {
+    padding-left: 5px;
+    margin-left: 15px;
+	
+	color: black;
+	border-color: #1eeded;
+}
+.add_text_button {
+	margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #1eeded;
+	background-color: #61666d;
+		
+}

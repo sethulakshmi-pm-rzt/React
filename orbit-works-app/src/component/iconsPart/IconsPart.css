@@ -1,0 +1,16 @@
+.icons_wrapper {    
+    background-color: #1f2529;
+    width: 50px;
+    padding-top: 80px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.btn-log {
+    padding: 7px;
+    font-size: 17px;
+    line-height: 0.333333;
+    border-radius: 17px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}

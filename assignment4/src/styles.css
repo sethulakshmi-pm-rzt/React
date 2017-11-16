@@ -1,0 +1,78 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+}
+.outer_wrapper {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.nav_wrapper {
+    margin: 0;
+	background-image: url("image/main-hdr-bg.jpg");
+	height: 45px;
+}
+.title_wrapper {
+	height: 121px;
+	background-color: #e7ede6;
+}
+.id_style {
+	margin: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 250px;
+    font-family: serif;
+    font-weight: bolder;
+}
+.heading {
+	margin: 0;
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-family: sans-serif;
+    font-size: 40px;
+
+}
+.logo_wrapper {
+	float: right;
+}
+.tasks_wrapper {
+    height: 35px;
+    background-color: #474947;
+}
+.task {
+    float: left;
+    font-family: sans-serif;
+    color: white;
+}
+.new_task {
+    float: right;
+    width: 110px;
+    height: 30px;
+    padding: 3px;
+    padding-right: 17px;
+
+}
+.new_task_button {
+    color: white;
+    padding: 5px;    
+}
+.content_wrapper {
+    background-color: red;
+}
+.footer_wrapper {
+    background-color: #e8dede;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.content_image {
+    padding: 6px;
+}
+.list_style {
+    
+}
