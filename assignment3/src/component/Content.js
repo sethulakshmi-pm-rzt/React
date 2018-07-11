@@ -15,8 +15,6 @@ class Content extends React.Component {
 				<p className = "para2">
 					Hey! My name is Dominik Geisler and I am a freelancer from Amberg/Germany. I advise, conceive, design and mix standers of design with<br />innovative and new ideas. Check out my portfolio and don't hesitate to contact me.
 				</p>
-
-				<input type = "checkbox" value = {item.status} />
 			</div>
 		);
 	}

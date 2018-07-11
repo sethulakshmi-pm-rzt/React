@@ -5,7 +5,7 @@ class Footer extends React.Component {
 	render () {		
 		return (
 			<footer className = "footer">
-				&copy 2012 DOMDESIGN. 
+				@ 2012 DOMDESIGN.
 				<span className = "footer_span">Impressum.</span> 
 			</footer>
 		);
