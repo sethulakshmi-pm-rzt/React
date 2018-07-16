@@ -111,57 +111,12 @@ li.active {
 }
 
 .cardWrapper {
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .textStyle {
 
 }
-
-/*.headingText {*/
-  /*height: 50px;*/
-  /*background: black;*/
-  /*margin: 20px 0;*/
-  /*display: flex;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
-  /*position: relative;*/
-/*}*/
-
-/*.previousCard {*/
-  /*!*animation: normalColor ease-in 350ms;*!*/
-/*}*/
-
-/*.currentCard {*/
-  /*background: white;*/
-  /*!*animation: activeCard ease-in 350ms;*!*/
-/*}*/
-
-/*@keyframes activeCard {*/
-  /*0% {*/
-    /*background: black;*/
-  /*}*/
-
-  /*80% {*/
-    /*background: white;*/
-  /*}*/
-
-  /*100% {*/
-    /*background: black;*/
-  /*}*/
-/*}*/
-
-/*@keyframes normalColor {*/
-  /*from {*/
-    /*background: white;*/
-  /*}*/
-  /*to {*/
-    /*background: black;*/
-  /*}*/
-/*}*/
-
-
-
 
 .headingText {
   height: 50px;
@@ -171,17 +126,88 @@ li.active {
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: background 500ms linear;
-}
-
-.headingText:hover {
-  cursor: pointer;
-}
-
-.previousCard {
-
 }
 
 .currentCard {
   background: white;
+  animation: activeCard linear 3000ms;
 }
+
+@keyframes activeCard {
+  0% {
+    background: white;
+  }
+
+  to {
+    background: black;
+  }
+}
+
+
+
+
+
+/*.headingText {*/
+  /*height: 50px;*/
+  /*background: black;*/
+  /*margin: 20px 0;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*position: relative;*/
+  /*transition: background 3000ms ease-out;*/
+  /*transition-delay: 2s;*/
+/*}*/
+
+/*.headingText:hover {*/
+  /*cursor: pointer;*/
+/*}*/
+
+/*.previousCard {*/
+
+/*}*/
+
+/*.currentCard {*/
+  /*background: white;*/
+/*}*/
+
+
+
+/*---------------------------------------------------*/
+
+.dataWrapper {
+
+}
+
+.child {
+  height: 50px;
+  background: black;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: active;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes active {
+  50% {
+    background: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
