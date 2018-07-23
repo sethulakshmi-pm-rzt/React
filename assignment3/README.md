@@ -1,3 +1,17 @@
+Run by using npm start -
+
+1. Animation Pgm
+
+2. Counter pgm - redux
+
+3. Get Git User
+
+4. 3rd asssignment
+
+5. Watcher - script for moving files.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
