@@ -1,0 +1,44 @@
+.userDetailsWrapper {
+  width: 800px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.userDetailsHeader {
+  text-align: center;
+}
+
+.userDetailsContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.userDetailsLabel {
+
+}
+
+.userDetailsInput {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 20px;
+  min-width: 200px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.userDetailsButton:hover {
+  cursor: pointer;
+}
+
+.userDetailsInput:hover {
+  cursor: text;
+}
+.userDetailsButton {
+  border-radius: 12px;
+  background: #ead2d2;
+  color: #141415;
+  font-size: 16px;
+  padding: 5px;
+}

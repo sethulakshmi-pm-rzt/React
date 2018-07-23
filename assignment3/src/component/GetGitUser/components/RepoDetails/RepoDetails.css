@@ -1,0 +1,35 @@
+/*Repositories styles starts here*/
+
+.repoProectName {
+
+}
+
+.repoWrapper {
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #dac6b0;
+}
+
+.repoWrapper:hover {
+  background: #9c9c9c;
+  cursor: pointer;
+}
+
+.repoCreated {
+
+}
+
+.repoClone {
+
+}
+
+.repoLanguage {
+
+}
+
+.repoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

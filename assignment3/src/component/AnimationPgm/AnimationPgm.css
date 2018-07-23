@@ -1,0 +1,38 @@
+.dataWrapper {
+
+}
+
+.child {
+  height: 50px;
+  background: black;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: active;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.animation_wrapper {
+  display: block;
+  width: 500px;
+  height: 700px;
+  margin: auto;
+}
+
+.dataWrapper .child:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.selectedCard {
+
+}
+
+
+@keyframes active {
+  50% {
+    background: white;
+  }
+}

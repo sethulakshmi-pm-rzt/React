@@ -1,0 +1,20 @@
+.followerImg {
+  height: 200px;
+  width: 200px;
+  border-radius: 6px;
+  margin-right: 30px;
+
+}
+
+.followerData {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.followerName {
+  font-size: 20px;
+}

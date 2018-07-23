@@ -1,0 +1,72 @@
+
+.userPage {
+
+}
+
+.userDetail {
+
+}
+
+.userData {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.userImg {
+  height: 230px;
+  width: 230px;
+  border-radius: 6px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.name {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.designation {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: #666;
+}
+
+.userId {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.gihubDetails {
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.githubHeading {
+  color: #666;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.githubData {
+  color: black;
+}
+
+.githubItem {
+  margin-bottom: 20px;
+}
+
+.githubItem:hover {
+  cursor: pointer;
+}
