@@ -5,6 +5,18 @@ import { connect } from 'react-redux';
 import RepoDetails from './../RepoDetails/RepoDetailsComp';
 import User from './../User/User';
 
+import {
+  getFollowers,
+  getFollowing,
+  getRepo,
+} from './../../GetGitUser.actions';
+
+import {
+  GET_FOLLOWERS_SAGA,
+  GET_FOLLOWING_SAGA,
+  GET_REPOSITORIES_SAGA,
+} from './../../GetGitUser.constants';
+
 class GithubUser extends React.Component {
   constructor(props) {
     super(props);
@@ -18,8 +30,6 @@ class GithubUser extends React.Component {
   render() {
 
     const { user } = this.props;
-
-    console.log("QQQQQQ", this.props)
 
     const gitData = [
       {
@@ -85,69 +95,94 @@ class GithubUser extends React.Component {
               onClick={() => {
 
                 if (item.name === 'Followers') {
-                  fetch(user.followers_url)
-                    .then((response) => response.json())
-                    .then((followersData) => {
 
-                      // this.setState({
-                      //   followers: userData,
-                      //   following: '',
-                      //   repo: '',
-                      // });
+                  // fetch(user.followers_url)
+                  //   .then((response) => response.json())
+                  //   .then((followersData) => {
+                  //
+                  //     // this.setState({
+                  //     //   followers: userData,
+                  //     //   following: '',
+                  //     //   repo: '',
+                  //     // });
+                  //
+                  //     // this.props.dispatch({
+                  //     //   type: 'GET_FOLLOWERS',
+                  //     //   followersData: followersData,
+                  //     // })
+                  //
+                  //     this.props.dispatch(getFollowers(followersData))
+                  //
+                  //   })
+                  //   .catch((error) => {
+                  //     console.error('Error', error);
+                  //   });
 
-                      this.props.dispatch({
-                        type: 'GET_FOLLOWERS',
-                        followersData: followersData,
-                      })
+                  this.props.dispatch({
+                    type: GET_FOLLOWERS_SAGA,
+                    followersUrl: user.followers_url,
+                  })
 
-                    })
-                    .catch((error) => {
-                      console.error('Error', error);
-                    });
                 }
 
                 if (item.name === 'Following') {
-                  fetch(`https://api.github.com/users/${user.login}/following`)
-                    .then((response) => response.json())
-                    .then((followingData) => {
+                  // fetch(`https://api.github.com/users/${user.login}/following`)
+                  //   .then((response) => response.json())
+                  //   .then((followingData) => {
+                  //
+                  //     // this.setState({
+                  //     //   following: userData,
+                  //     //   followers: '',
+                  //     //   repo: '',
+                  //     // });
+                  //
+                  //     // this.props.dispatch({
+                  //     //   type: 'GET_FOLLOWING',
+                  //     //   followingData: followingData,
+                  //     // })
+                  //
+                  //     this.props.dispatch(getFollowing(followingData))
+                  //
+                  //   })
+                  //   .catch((error) => {
+                  //     console.error('Error', error);
+                  //   });
 
-                      // this.setState({
-                      //   following: userData,
-                      //   followers: '',
-                      //   repo: '',
-                      // });
+                  this.props.dispatch({
+                    type: GET_FOLLOWING_SAGA,
+                    followingUrl: user.login,
+                  })
 
-                      this.props.dispatch({
-                        type: 'GET_FOLLOWING',
-                        followingData: followingData,
-                      })
-
-                    })
-                    .catch((error) => {
-                      console.error('Error', error);
-                    });
                 }
 
                 if (item.name === 'Repositories') {
-                  fetch(user.repos_url)
-                    .then((response) => response.json())
-                    .then((repoData) => {
+                  // fetch(user.repos_url)
+                  //   .then((response) => response.json())
+                  //   .then((repoData) => {
+                  //
+                  //     // this.setState({
+                  //     //   following: '',
+                  //     //   followers: '',
+                  //     //   repo: userData,
+                  //     // });
+                  //
+                  //     // this.props.dispatch({
+                  //     //   type: 'GET_REPOSITORIES',
+                  //     //   repoData: repoData,
+                  //     // })
+                  //
+                  //     this.props.dispatch(getRepo(repoData))
+                  //
+                  //   })
+                  //   .catch((error) => {
+                  //     console.error('Error', error);
+                  //   });
 
-                      // this.setState({
-                      //   following: '',
-                      //   followers: '',
-                      //   repo: userData,
-                      // });
+                  this.props.dispatch({
+                    type: GET_REPOSITORIES_SAGA,
+                    reposUrl: user.repos_url,
+                  })
 
-                      this.props.dispatch({
-                        type: 'GET_REPOSITORIES',
-                        repoData: repoData,
-                      })
-
-                    })
-                    .catch((error) => {
-                      console.error('Error', error);
-                    });
                 }
 
               }}

@@ -9,7 +9,7 @@ const RepoDetails = ({user, index}) => (
       key={index}
     >
       <h1
-        className={'repoProectName'}
+        className={'repoHeadingName'}
       >
         {user.name}
       </h1>

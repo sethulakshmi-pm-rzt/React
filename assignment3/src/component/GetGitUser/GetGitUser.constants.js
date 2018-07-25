@@ -1,2 +1,20 @@
+export const GET_GIT_USER = 'GET_GIT_USER';
 
-export const GET_GIT_USER = 'getGitUser';
+export const GET_USERNAME = 'GET_USERNAME';
+
+export const GET_FOLLOWERS = 'GET_FOLLOWERS';
+
+export const GET_FOLLOWING = 'GET_FOLLOWING';
+
+export const GET_REPOSITORIES = 'GET_REPOSITORIES';
+
+
+export const GET_GIT_USER_SAGA = 'GET_GIT_USER_SAGA';
+
+export const GET_USERNAME_SAGA = 'GET_USERNAME_SAGA';
+
+export const GET_FOLLOWERS_SAGA = 'GET_FOLLOWERS_SAGA';
+
+export const GET_FOLLOWING_SAGA = 'GET_FOLLOWING_SAGA';
+
+export const GET_REPOSITORIES_SAGA = 'GET_REPOSITORIES_SAGA';

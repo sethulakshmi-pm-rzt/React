@@ -4,6 +4,15 @@ import GithubUser from './components/GithubUser/GithubUser';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import {
+  GET_GIT_USER_SAGA
+} from './GetGitUser.constants';
+
+import {
+  getUsername,
+  getGitUser,
+} from './GetGitUser.actions';
+
 //Redux
 
 class GetGitUser extends React.Component {
@@ -16,21 +25,28 @@ class GetGitUser extends React.Component {
     // }
   }
 
-  onSearch = () => {
-    return fetch(`https://api.github.com/users/${this.userNameRef.value}`)
-      .then((response) => response.json())
-      .then((userData) => {
-        // this.setState({
-        //   user: userData,
-        // });
-        this.props.dispatch({
-          type: 'GET_GIT_USER',
-          userData: userData,
-        });
-      })
-      .catch((error) => {
-        console.error("Error", error);
-      });
+  onSearch = (userName) => {
+
+    console.log("Username : ", userName);
+
+    this.props.dispatch({
+      type: GET_GIT_USER_SAGA,
+      userName: userName,
+    });
+
+    // return fetch(`https://api.github.com/users/${userName}`)
+    //   .then((response) => response.json())
+    //   .then((userData) => {
+    //     // this.setState({
+    //     //   user: userData,
+    //     // });
+    //
+    //     console.log("ZZZZZZ", userData)
+    //     this.props.dispatch(getGitUser(userData));
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error", error);
+    //   });
   };
 
   render() {
@@ -62,11 +78,14 @@ class GetGitUser extends React.Component {
               //   userName: this.userNameRef.value
               // });
 
-              this.props.dispatch({
-                type: 'GET_USERNAME',
-                userName: this.userNameRef.value,
-              });
-              this.onSearch();
+              // this.props.dispatch({
+              //   type: 'GET_USERNAME',
+              //   userName: this.userNameRef.value,
+              // });
+
+              let val = this.props.dispatch(getUsername(this.userNameRef.value));
+
+              this.onSearch(val.userName);
             }}
           >
             Search
