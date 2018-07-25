@@ -13,7 +13,7 @@ import {
   getGitUser,
 } from './GetGitUser.actions';
 
-//Redux
+//Redux - Saga
 
 class GetGitUser extends React.Component {
   constructor(props) {
